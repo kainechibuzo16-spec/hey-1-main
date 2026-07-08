@@ -311,7 +311,9 @@
 
   /* Elevated Card */
   .card-elevated {
-    @apply card;
+    @apply rounded-lg border border-neutral-200 dark:border-neutral-700;
+    @apply bg-neutral-0 dark:bg-neutral-900;
+    @apply transition-all duration-200;
     @apply shadow-md dark:shadow-lg;
   }
 
@@ -320,7 +322,7 @@
     @apply outline-none;
 
     p {
-      @apply word-break-break-word;
+      word-break: break-word;
     }
 
     & a,
@@ -392,7 +394,7 @@
   /* Markup Styles */
   .markup > p,
   ul {
-    @apply word-break-break-word;
+    word-break: break-word;
     @apply leading-[26px] list-disc list-inside;
     @apply [&:not(:last-child)]:mb-3;
     @apply text-neutral-700 dark:text-neutral-300;
@@ -449,29 +451,29 @@
   }
 
   /* Backdrop */
-  .backdrop-blur-sm {
+  .backdrop {
     @apply backdrop-blur-sm bg-neutral-950/50 dark:bg-neutral-950/70;
   }
 
   /* Status Colors */
   .status-success {
-    @apply text-success dark:text-success;
-    @apply bg-success-light dark:bg-opacity-20;
+    @apply text-success;
+    @apply bg-success-light dark:bg-success/20;
   }
 
   .status-error {
-    @apply text-error dark:text-error;
-    @apply bg-error-light dark:bg-opacity-20;
+    @apply text-error;
+    @apply bg-error-light dark:bg-error/20;
   }
 
   .status-warning {
-    @apply text-warning dark:text-warning;
-    @apply bg-warning-light dark:bg-opacity-20;
+    @apply text-warning;
+    @apply bg-warning-light dark:bg-warning/20;
   }
 
   .status-info {
-    @apply text-info dark:text-info;
-    @apply bg-info-light dark:bg-opacity-20;
+    @apply text-info;
+    @apply bg-info-light dark:bg-info/20;
   }
 
   /* Animations */
